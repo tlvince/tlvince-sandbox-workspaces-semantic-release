@@ -6,7 +6,7 @@
   "scripts": {
     "test": "exit",
     "start": "node packages/tlvince-sandbox-monorepo-pkg-b/index.js",
-    "semantic-release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo"
+    "semantic-release": "lerna run --concurrency 1 semantic-release"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +23,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tlvince/tlvince-sandbox-workspaces-semantic-release.git"
+  },
+  "release": {
+    "extends": "semantic-release-monorepo"
   }
 }
