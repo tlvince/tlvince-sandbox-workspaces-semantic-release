@@ -1,1 +1,1 @@
-module.exports = 'pkg-a'
+module.exports = 'From pkg-a'
