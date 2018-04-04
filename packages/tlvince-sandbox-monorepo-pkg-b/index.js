@@ -1,2 +1,2 @@
 const pkgA = require('tlvince-sandbox-monorepo-pkg-a')
-console.log('Hello', pkgA)
+console.log('Hello from pkg-b and', pkgA)
