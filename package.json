@@ -1,0 +1,25 @@
+{
+  "name": "tlvince-sandbox-workspaces-semantic-release",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node packages/tlvince-sandbox-monorepo-pkg-b/index.js",
+    "semantic-release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "semantic-release": "^15.1.5",
+    "semantic-release-monorepo": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlvince/tlvince-sandbox-workspaces-semantic-release.git"
+  }
+}
